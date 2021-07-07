@@ -1,2 +1,2 @@
 # golang-webservices-1
-Разработка веб-сервисов на Go - основы языка
+Курс [Разработка веб-сервисов на Go - основы языка](https://www.coursera.org/learn/golang-webservices-1)
