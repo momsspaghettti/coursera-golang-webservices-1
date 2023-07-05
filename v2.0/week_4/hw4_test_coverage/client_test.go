@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"encoding/xml"
-	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"sort"
 	"strconv"
 	"strings"
@@ -78,7 +78,7 @@ func SearchServer(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	file, err := ioutil.ReadFile("dataset.xml")
+	file, err := os.ReadFile("dataset.xml")
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		return
